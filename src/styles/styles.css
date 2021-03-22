@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padd: 0;
+  box-sizing: border-box;
+}
+
+.upload-background {
+  background-color: #bbbb;
+}
+
+
+/* .circle {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 6px solid transparent;
+  stroke: blue;
+  stroke-width: 4;
+  stroke-linecap: round;
+} */
+
+.spinner-container {
+  height: 15rem;
+}
+
+.spinner {
+  fill: none;
+  stroke-width: 10;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  stroke-linecap: round;
+}

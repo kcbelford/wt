@@ -5,7 +5,7 @@ import Button from './Button';
 class UserUpload extends React.Component {
   render() {
     return (
-      <div>
+      <div className="upload-background">
         <Spinner />
         <Button />
       </div>
