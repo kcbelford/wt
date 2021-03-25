@@ -1,11 +1,13 @@
 import React from 'react';
-import UserUpload from './UserUpload';
-import '../styles/styles.css';
+import Spinner from './Spinner'
+;import '../styles/styles.css';
 
 class App extends React.Component {
   render() {
     return (
-      <UserUpload />
+      <div>
+        <Spinner />
+      </div>
     );
   };
 }

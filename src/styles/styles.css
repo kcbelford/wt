@@ -10,7 +10,10 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border: 2px solid gray;
+  width: 17rem;
+  height: 25rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px #EBECF0;
 }
 
 .percent {
@@ -53,6 +56,11 @@
 
 .spin {
   animation: spinner 7s infinite linear;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
 }
 
 @keyframes spinner {
