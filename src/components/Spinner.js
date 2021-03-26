@@ -4,19 +4,25 @@ class Spinner extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { uploading: false };
+    this.state = {
+      uploading: false,
+      percent: 0
+    };
   }
 
   onStartClick(e){
-    console.log('start clicked');
     e.preventDefault();
     this.setState({ uploading: true })
+
+    for (let i = 0; i <= 100; i++) {
+      this.state.percent = i
+    }
   }
 
   onEndClick(e){
-    console.log('end clicked');
     e.preventDefault();
-    this.setState({ uploading: false })
+    this.setState({ uploading: false, percent: 0 })
+
   }
 
 
@@ -30,9 +36,11 @@ class Spinner extends React.Component {
             <circle className={`spinner ${uploading ? 'spin' : ''}`} cx="0" cy="0" r="100" ></circle>
           </svg>
           <div className="percent">
-            <h2>65<span>%</span></h2>
+            <h2>{this.state.percent}<span>%</span></h2>
           </div>
-          <h2>Transferring...</h2>
+          <div className="transferring">
+            <h2 className={`${!uploading ? 'hide-transfer' : ''}`}>Transferring...</h2>
+          </div>
         </div>
         <div className="buttons">
           <button onClick={(e) => this.onStartClick(e)}>Start</button>

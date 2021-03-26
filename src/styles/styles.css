@@ -12,8 +12,10 @@
   flex-direction: column;
   width: 17rem;
   height: 25rem;
+  margin: 5rem auto;
   border-radius: 10px;
-  box-shadow: 5px 5px 8px #EBECF0;
+  box-shadow: 5px 5px 10px #EBECF0;
+  border: 1px solid #EBECF0;
 }
 
 .percent {
@@ -55,13 +57,25 @@
 }
 
 .spin {
-  animation: spinner 7s infinite linear;
+  animation: spinner 7s linear infinite;
 }
 
 .buttons {
   display: flex;
   justify-content: center;
+  /* align-items: center; */
+  /* margin-top: 6rem; */
+  /* padding-top: 1.5rem; */
+  border-top: 2px solid #EBECF0;
+  width: 100%;
 }
+
+.transferring {
+}
+
+/* .hide-transfer {
+  display: none;
+} */
 
 @keyframes spinner {
   to {
