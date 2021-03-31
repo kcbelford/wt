@@ -15,24 +15,15 @@ class Spinner extends React.Component {
     this.setState({ uploading: true })
 
     for (let i = 0; i <= 100; i++) {
-      const counter = () => {
+      setTimeout((i) => {
         this.setState({ percent: i })
-        console.log(this.state.percent);
-      };
-      // setInterval(counter, 10.0)
-      //
-      // let myInterval = setInterval(counter, 10.0)
-      //
-      // clearInterval(myInterval)
+      }, 100 * i, i)
     }
-
-
   }
 
   onEndClick(e){
     e.preventDefault();
     this.setState({ uploading: false, percent: 0 })
-
   }
 
 

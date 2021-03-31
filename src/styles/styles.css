@@ -57,7 +57,7 @@
 }
 
 .spin {
-  animation: spinner 7s linear infinite;
+  animation: spinner 16s linear infinite;
 }
 
 .buttons {
@@ -79,7 +79,7 @@
 
 @keyframes spinner {
   to {
-    transform: rotate(1080deg);
+    transform: rotate(1260deg);
     stroke-dashoffset: 0;
   }
 }
