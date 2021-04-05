@@ -10,8 +10,7 @@ class Spinner extends React.Component {
     };
   }
 
-  onStartClick(e){
-    e.preventDefault();
+  onStartClick(){
     this.setState({ uploading: true })
 
     for (let i = 0; i <= 100; i++) {
@@ -21,11 +20,9 @@ class Spinner extends React.Component {
     }
   }
 
-  onEndClick(e){
-    e.preventDefault();
+  onEndClick(){
     this.setState({ uploading: false, percent: 0 })
   }
-
 
   render() {
     const { uploading } = this.state;
@@ -44,8 +41,8 @@ class Spinner extends React.Component {
           </div>
         </div>
         <div className="buttons">
-          <button onClick={(e) => this.onStartClick(e)}>Start</button>
-          <button onClick={(e) => this.onEndClick(e)}>End</button>
+          <button onClick={() => this.onStartClick()}>Start</button>
+          <button onClick={() => this.onEndClick()}>End</button>
         </div>
       </div>
     );
