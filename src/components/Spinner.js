@@ -30,8 +30,8 @@ class Spinner extends React.Component {
       <div className="upload-background">
         <div className="upload-info">
           <svg className="spinner-container" viewBox="-125 -125 250 250">
-            <circle className="spinner-path" cx="0" cy="0" r="100" ></circle>
-            <circle className={`spinner ${uploading ? 'spin' : ''}`} cx="0" cy="0" r="100" ></circle>
+            <circle className="spinner-path" cx="0" cy="0" r="130" ></circle>
+            <circle className={`spinner ${uploading ? 'spin' : ''}`} cx="0" cy="0" r="130" ></circle>
           </svg>
           <div className="percent">
             <h2>{this.state.percent}<span>%</span></h2>
