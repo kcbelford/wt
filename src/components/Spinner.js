@@ -33,11 +33,12 @@ class Spinner extends React.Component {
             <circle className="spinner-path" cx="0" cy="0" r="110" ></circle>
             <circle className={`spinner ${uploading ? 'spin' : ''}`} cx="0" cy="0" r="110" ></circle>
           </svg>
-          <div className="percent">
-            <h2>{this.state.percent}<span>%</span></h2>
+          <div className="number-percent">
+            <p className="number">{this.state.percent}</p>
+            <p className="percent">%</p>
           </div>
           <div className="transferring">
-            <h2 className={`${!uploading ? 'hide-transfer' : ''}`}>Transferring...</h2>
+            <p className={`${!uploading ? 'hide-transfer' : ''}`}>Transferring...</p>
           </div>
         </div>
         <div className="buttons">
