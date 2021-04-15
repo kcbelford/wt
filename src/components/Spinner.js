@@ -29,7 +29,7 @@ class Spinner extends React.Component {
     return (
       <div className="upload-background">
         <div className="upload-info">
-          <svg className="spinner-container" viewBox="-125 -125 250 250">
+          <svg className="spinner-container" viewBox="-125 -155 250 275">
             <circle className="spinner-path" cx="0" cy="0" r="110" ></circle>
             <circle className={`spinner ${uploading ? 'spin' : ''}`} cx="0" cy="0" r="110" ></circle>
           </svg>
