@@ -42,8 +42,8 @@ class Spinner extends React.Component {
           </div>
         </div>
         <div className="buttons">
-          <button onClick={() => this.onStartClick()}>Start</button>
-          <button onClick={() => this.onEndClick()}>End</button>
+          <button className={`${uploading ? 'hide-start-btn' : ''}`} onClick={() => this.onStartClick()}>Start</button>
+          <button className={`${!uploading ? 'hide-end-btn' : ''}`} onClick={() => this.onEndClick()}>End</button>
         </div>
       </div>
     );
