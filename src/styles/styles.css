@@ -48,7 +48,7 @@
 }
 
 .spin {
-  animation: spinner 14.5s linear infinite;
+  animation: spinner 14.5s linear;
 }
 
 .number-percent {
